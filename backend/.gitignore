@@ -1,0 +1,79 @@
+# --- SECURITY ---
+application.properties
+
+# --- JAVA & MAVEN ---
+target/
+*.class
+# Note: Keeping the wrapper allows others to run the project without installing Maven
+# If you want to hide these, uncomment the next 3 lines:
+# mvnw
+# mvnw.cmd
+# .mvn/
+
+# --- IDE SPECIFIC ---
+# IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# VS Code
+.vscode/
+
+# STS / Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# --- MISC ---
+HELP.md
+.DS_Store
+
+
+
+#HELP.md
+#target/
+#.mvn/wrapper/maven-wrapper.jar
+#!**/src/main/**/target/
+#!**/src/test/**/target/
+#
+#### STS ###
+#.apt_generated
+#.classpath
+#.factorypath
+#.project
+#.settings
+#.springBeans
+#.sts4-cache
+#
+#### IntelliJ IDEA ###
+#.idea
+#*.iws
+#*.iml
+#*.ipr
+#
+#### NetBeans ###
+#/nbproject/private/
+#/nbbuild/
+#/dist/
+#/nbdist/
+#/.nb-gradle/
+#build/
+#!**/src/main/**/build/
+#!**/src/test/**/build/
+#
+#### VS Code ###
+#.vscode/
