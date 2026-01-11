@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #efe7d8;
+  color: #1e1e1e;
+}
+
+#landing-page {
+  padding: 80px;
+  perspective: 1400px;
+}
+
+.gallery-header {
+  max-width: 900px;
+  margin: 0 auto 56px auto;
+  text-align: center;
+}
+
+.gallery-header h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 42px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2a2a2a;
+}
+
+.subtitle {
+  margin-top: 28px;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.8;
+  color: #4a4a4a;
+}
+
+.gallery-header::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: rgba(0,0,0,0.25);
+  margin: 24px auto 0 auto;
+}
+
+#artwork-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 90px;
+  margin-top: 20px;
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out;
+}
+
+.artwork-item {
+  position: relative;
+  background-color: #fdfbf6;
+  padding: 22px;
+  box-shadow:
+    0 1px 1px rgba(0,0,0,0.05),
+    0 6px 18px rgba(0,0,0,0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+.artwork-item:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 3px 6px rgba(0,0,0,0.08),
+    0 14px 36px rgba(0,0,0,0.18);
+}
+
+.artwork-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  background-color: #f7f2e8;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.artwork-item p {
+  margin-top: 18px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #444;
+}
+
+#artwork-page {
+  display: flex;
+  height: 100vh;
+  background-color: #efe7d8;
+}
+
+#interaction-zone {
+  flex: 2;
+  background-color: #e7dcc8;
+  position: relative;
+  overflow: hidden;
+}
+
+#context-zone {
+  flex: 1;
+  padding: 56px;
+  background-color: #fdfbf6;
+}
+
+#context-zone h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #2a2a2a;
+}
+
+#context-zone p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+#context-zone small {
+  display: block;
+  margin-top: 32px;
+  font-style: italic;
+  color: #777;
+}
+
+.fragment {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  outline: 1px solid rgba(0,0,0,0.12);
+  outline-offset: -1px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  background-repeat: no-repeat;
+  cursor: grab;
+  transition: box-shadow 0.2s ease;
+}
+
+.fragment:hover {
+  box-shadow: 0 10px 28px rgba(0,0,0,0.24);
+}
+
+@media (max-width: 768px) {
+  #landing-page {
+    padding: 40px;
+  }
+
+  #artwork-list {
+    gap: 50px;
+  }
+
+  .gallery-header h1 {
+    font-size: 32px;
+  }
+}

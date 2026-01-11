@@ -1,9 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Interactive Visual Art Space</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Interactive Visual Art Space</h1>
+
+  <section id="landing-page">
+    <header class="gallery-header">
+      <h1>Interactive Visual Art Space</h1>
+      <p class="subtitle">
+        A generative exhibition exploring interaction, fragmentation, and visual meaning.
+      </p>
+    </header>
+
+    <div id="artwork-list"></div>
+  </section>
+
+  <section id="artwork-page" style="display: none;">
+
+    <div id="interaction-zone"></div>
+
+    <div id="context-zone">
+      <h2 id="artwork-title"></h2>
+      <p id="artwork-intro"></p>
+      <p id="artwork-description"></p>
+      <small>Drag fragments to explore alternate visual compositions.</small>
+    </div>
+
+  </section>
+
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
